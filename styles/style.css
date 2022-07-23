@@ -1,8 +1,152 @@
-/*
-Colors:
+/* GENERAL */
+:root {
+  --text-color: #1a1a1a;
+  --green: #00b172;
+  ---white: #fff;
+  --font-family: "Roboto", sans-serif;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 
-*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+h1 {
+  color: var(---white);
+  font-size: 4rem;
+}
+
+h2 {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* HEADER */
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 30px;
+  top: 0;
+  background-color: var(---white);
+  padding: 1.5rem 2rem;
+}
+
+header .spotify-logo {
+  width: 8%;
+}
+
+header nav ul {
+  gap: 1.5rem;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--green);
+  text-underline-offset: 0.4rem;
+}
+
+/* MAIN */
+
+#main {
+  margin-top: 30px;
+  height: 600px;
+  background-image: url("/images/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#main p {
+  color: var(---white);
+  line-height: 1.5rem;
+}
+
+/* WHAT'S ON SPOTIFY */
+
+#whats-on-spotify-section {
+  padding: 3rem 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+#whats-on-spotify-section h2 {
+  text-decoration-color: var(--green);
+}
+
+#whats-on-spotify-section h3 {
+  color: var(--green);
+  padding-bottom: 1.5rem;
+}
+
+#whats-on-spotify-section #whats-on-spotify-text {
+  justify-content: space-between;
+}
+
+#whats-on-spotify-section #whats-on-spotify-text article {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+#whats-on-spotify-section #whats-on-spotify-text article img {
+  width: 20%;
+  padding-bottom: 0.5rem;
+}
+
+/* FEATURES INTRO */
+
+#features-info-section {
+  background-color: var(--green);
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding: 3rem 3rem;
+}
+
+#features-info-section h2,
+#features-info-section h3,
+#features-info-section p {
+  color: var(---white);
+  padding-bottom: 1.5rem;
+}
+
+#features-info-text {
+  width: 40%;
+}
+#features-info-section .spotify-logo-icon {
+  width: 10%;
+  height: 10%;
+}
+#features-info-section .device-image {
+  width: 25%;
+}
